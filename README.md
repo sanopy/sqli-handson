@@ -7,6 +7,7 @@ hands-on for SQL injection techniques
 - GNU Make
 - Docker
 - Python3
+  - [Requests](https://docs.python-requests.org/en/master/)
 
 ## Usage
 

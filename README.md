@@ -17,6 +17,8 @@ $ make [target]
 targets:
   start           start docker containers
   stop            stop docker containers
+  restart         restart docker containers
+  sql             connect SQL server
   query-log       show SQL query log
   clean           clean all docker images used by this app
 ```

